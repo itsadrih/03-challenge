@@ -49,7 +49,7 @@ function generatePassword() {
 function showPrompt() {
   userChoices=[];
 
-  characterLength = parseInt(prompt("How many characters would you like your password to contain? 8 - 128 character"));
+  characterLength = parseInt(prompt("How many characters would you like your password to contain? 8 - 128 characters"));
 
   if(isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
 
@@ -57,17 +57,17 @@ function showPrompt() {
    }
 
 
- if (confirm("Would you like your password to contain Upper Case letter?")){
+ if (confirm("Would you like your password to contain a Upper Case letter?")){
      userChoices= userChoices.concat(upperCase);
   }
 
- if (confirm("Would you like your password to contain lower Case letter?")) {
+ if (confirm("Would you like your password to contain a lower Case letter?")) {
       userChoices= userChoices.concat(lowerCase);
   } 
 
 
 
- if (confirm("Would you like your password to contain number?")) {
+ if (confirm("Would you like your password to contain a number?")) {
       userChoices= userChoices.concat(numbers);
   }
 
